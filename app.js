@@ -1,9 +1,10 @@
 // Listen for submit
-document.getElementById("loan-form").addEventListener("submit", function() {
+document.getElementById("loan-form").addEventListener("submit", function(e) {
   // Hide results
   document.getElementById("results").style.display = "none";
 
   // Show loading
+  document.getElementById("loading").style.display = "block";
 
   e.preventDefault();
 });
