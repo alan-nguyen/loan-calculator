@@ -47,6 +47,12 @@ function calculateResults() {
 
 // Show Error
 function showError(error) {
+  // Show results
+  document.getElementById("results").style.display = "none";
+
+  // Hide loading
+  document.getElementById("loading").style.display = "none";
+
   // Create a div
   const errorDiv = document.createElement("div");
 
